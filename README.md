@@ -106,3 +106,41 @@ $client->checkVersion();     // Checks if update is available
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+## Releasing New Versions
+
+When you make changes to the client:
+
+### 1. Update the Version Constant
+```php
+// src/BrainEventClient.php
+public const CLIENT_VERSION = '1.1.0';  // Bump version
+```
+
+### 2. Update the Changelog
+```markdown
+## [1.1.0] - 2024-12-23
+### Added
+- New feature description
+```
+
+### 3. Commit and Tag
+```bash
+git add -A
+git commit -m "Release v1.1.0 - description"
+git tag -a v1.1.0 -m "Description of changes"
+git push origin main --tags
+```
+
+Packagist will automatically detect the new tag and make it available!
+
+### 4. Update Client Projects
+```bash
+composer update brain-nucleus/client
+```
+
+## Semantic Versioning
+
+- **MAJOR** (2.0.0): Breaking changes
+- **MINOR** (1.1.0): New features, backward compatible
+- **PATCH** (1.0.1): Bug fixes, backward compatible
