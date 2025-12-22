@@ -15,3 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `getVersion()` method to get current client version
 - `checkVersion()` method to check for updates
 - Automatic client version tracking via `X-Brain-Client-Version` header
+
+## [1.0.1] - 2024-12-22
+
+### Changed
+- Version bump to test Packagist auto-update workflow
