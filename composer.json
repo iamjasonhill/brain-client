@@ -21,6 +21,13 @@
             "Brain\\Client\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brain\\Client\\BrainServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {

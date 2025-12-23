@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Log;
  */
 class BrainEventClient
 {
-    public const CLIENT_VERSION = '1.1.0';
+    public const CLIENT_VERSION = '1.2.0';
 
     private string $baseUrl;
 
