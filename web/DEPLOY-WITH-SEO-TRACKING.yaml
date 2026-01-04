@@ -1,0 +1,44 @@
+# Deploy with SEO Snapshot Workflow
+#
+# Add this to your project's `.github/workflows/deploy.yml`
+# This workflow triggers after a successful deployment to notify
+# Domain Monitor, which then triggers an SEO snapshot in Brain.
+#
+# Required secrets:
+#   DOMAIN_MONITOR_API_KEY: Your Domain Monitor API key
+#   DOMAIN_MONITOR_URL: Domain Monitor base URL (e.g. https://domains.again.com.au)
+#
+# Usage:
+#   Replace `movinginsurance.com.au` with your actual domain.
+
+name: Deploy and Track SEO
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Your existing deploy steps go here...
+      # Example: Vercel, Netlify, or custom deployment
+      - name: Deploy to Production
+        run: echo "Your deployment command here"
+
+      # After successful deployment, notify Domain Monitor
+      - name: Notify Domain Monitor
+        if: success()
+        run: |
+          curl -X POST "${{ secrets.DOMAIN_MONITOR_URL }}/api/deployments" \
+            -H "Authorization: Bearer ${{ secrets.DOMAIN_MONITOR_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "domain": "movinginsurance.com.au",
+              "commit": "${{ github.sha }}",
+              "notes": "Deployed via GitHub Actions"
+            }'
