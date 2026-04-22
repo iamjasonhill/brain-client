@@ -62,6 +62,35 @@ Current fix:
 
 ## Change Log
 
+### 2026-04-23 04:46:07 AEST
+
+- Issue / trigger:
+  Bossman issue #1, staged package naming and downstream compatibility review
+- What changed:
+  - added `docs/PACKAGE-IDENTITY-PLAN.md` to document the package naming
+    recommendation, downstream risks, and staged rename conditions
+  - linked the package identity plan from `README.md`, `INDEX.md`, and
+    `VERSIONING.md` so the decision is visible from the main package docs
+- What was fixed:
+  - the repo now has an explicit package-side recommendation instead of leaving
+    `brain-nucleus/client` as an accidental naming hold
+  - compatibility and release constraints are now documented in-repo for quick
+    Bossman review
+- What remains:
+  - keep `brain-nucleus/client` in place until the control-plane rename path
+    and embedded-copy normalization in `TheBrain` are clearer
+  - if a future rename is approved, stage it as a documented downstream
+    migration rather than a blind package rename
+- Package naming recommendation:
+  keep `brain-nucleus/client` for now as a compatibility hold, not as a signal
+  that the wider Brain naming is fully settled
+- Compatibility / versioning constraints:
+  - downstream installs and update flows currently depend on
+    `brain-nucleus/client`
+  - install/versioning docs must move together if a future rename is approved
+  - the standalone `brain-client` repo should remain the canonical package
+    source throughout any later transition
+
 ### 2026-04-22 13:22:00 AEST
 
 - Issue / trigger:

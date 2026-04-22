@@ -16,6 +16,7 @@ the package source of truth.
 | **[INTEGRATION-GUIDE.md](INTEGRATION-GUIDE.md)**               | Advanced code patterns and examples                       |
 | **[OPS-EVENT-SPEC.md](OPS-EVENT-SPEC.md)**                     | Ops event specification (health, error, queue events)     |
 | **[EVENTS.md](EVENTS.md)**                                     | Business event definitions (quotes, payments, etc.)       |
+| **[docs/PACKAGE-IDENTITY-PLAN.md](docs/PACKAGE-IDENTITY-PLAN.md)** | Package naming recommendation and compatibility staging   |
 
 ## 🚀 Quick Start
 

@@ -158,6 +158,7 @@ composer update brain-nucleus/client
 | [INTEGRATION-GUIDE.md](INTEGRATION-GUIDE.md)               | Advanced code patterns and examples                       |
 | [OPS-EVENT-SPEC.md](OPS-EVENT-SPEC.md)                     | Event specifications and fingerprinting                   |
 | [EVENTS.md](EVENTS.md)                                     | Business event definitions                                |
+| [docs/PACKAGE-IDENTITY-PLAN.md](docs/PACKAGE-IDENTITY-PLAN.md) | Staged package naming recommendation and compatibility constraints |
 
 ---
 

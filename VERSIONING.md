@@ -25,6 +25,16 @@ $client = new BrainEventClient(...);
 $version = $client->getVersion();
 ```
 
+## Package Identity Status
+
+The published Composer package name remains `brain-nucleus/client` for now.
+
+That is a compatibility decision so downstream installs remain stable while the
+wider control-plane naming settles. See
+[docs/PACKAGE-IDENTITY-PLAN.md](docs/PACKAGE-IDENTITY-PLAN.md) for the staged
+rename recommendation, downstream risk summary, and future migration
+constraints.
+
 ## Version Tracking
 
 ### Automatic Tracking
