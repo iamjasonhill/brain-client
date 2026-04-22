@@ -2,6 +2,20 @@
 
 Official client for sending events to Brain Nucleus from Laravel applications.
 
+This repo is the canonical standalone source for the reusable client/package
+layer.
+
+It is distinct from:
+
+- `MM BRAIN`, which owns strategy, priority, interpretation, and history
+- `Brain2026`, which owns the SEO, research, builder, and orchestration lane
+- `TheBrain`, which is the control-plane application and is moving toward the
+  function-led identity `MM-Control-Plane`
+
+The package name `brain-nucleus/client` remains in place for compatibility.
+Any future package renaming should be staged carefully after downstream
+install/versioning impact is mapped.
+
 ## 🚀 Quick Start
 
 ### 1. Install via Composer
@@ -17,7 +31,7 @@ composer require brain-nucleus/client:dev-main
 >     "repositories": [
 >         {
 >             "type": "vcs",
->             "url": "https://github.com/iamjasonhill/thebrain.git"
+>             "url": "https://github.com/iamjasonhill/brain-client.git"
 >         }
 >     ]
 > }
@@ -151,4 +165,4 @@ composer update brain-nucleus/client
 
 - **Brain Admin:** https://again.com.au/admin
 - **Health Check:** https://again.com.au/api/v1/health
-- **Repository:** https://github.com/iamjasonhill/thebrain
+- **Repository:** https://github.com/iamjasonhill/brain-client

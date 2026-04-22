@@ -89,7 +89,7 @@ If you installed via Git repository or submodule:
 
 ```bash
 # Update the client files
-cd brain-nucleus
+cd brain-client
 git pull origin main
 
 # Or re-run install script
@@ -99,7 +99,7 @@ git pull origin main
 ### Method 2: Manual Copy
 
 1. Download latest `BrainEventClient.php` from:
-   https://github.com/iamjasonhill/thebrain/blob/main/brain-client/BrainEventClient.php
+   https://github.com/iamjasonhill/brain-client/blob/main/BrainEventClient.php
 
 2. Replace your existing file:
    ```bash

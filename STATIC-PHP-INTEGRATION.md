@@ -9,11 +9,11 @@ required.
 
 ```bash
 # From your site's includes directory
-curl -O https://raw.githubusercontent.com/iamjasonhill/thebrain/main/brain-client/BrainEventClient-standalone.php
+curl -O https://raw.githubusercontent.com/iamjasonhill/brain-client/main/BrainEventClient-standalone.php
 ```
 
 Or copy manually from:
-https://github.com/iamjasonhill/thebrain/blob/main/brain-client/BrainEventClient-standalone.php
+https://github.com/iamjasonhill/brain-client/blob/main/BrainEventClient-standalone.php
 
 ### 2. Get Your API Key
 
@@ -195,6 +195,6 @@ When scaffolding a static PHP site with WebForge:
 
 - **Brain Admin**: https://again.com.au/admin
 - **Client Source**:
-  https://github.com/iamjasonhill/thebrain/blob/main/brain-client/BrainEventClient-standalone.php
+  https://github.com/iamjasonhill/brain-client/blob/main/BrainEventClient-standalone.php
 - **Full Documentation**:
-  https://github.com/iamjasonhill/thebrain/tree/main/brain-client
+  https://github.com/iamjasonhill/brain-client

@@ -2,6 +2,11 @@
 
 Official client for sending events to Brain Nucleus from Laravel applications.
 
+Canonical package source: `https://github.com/iamjasonhill/brain-client`
+
+The embedded copy inside `TheBrain` is transitional runtime/docs material, not
+the package source of truth.
+
 ## 📚 Documentation
 
 | Document                                                       | Purpose                                                   |
